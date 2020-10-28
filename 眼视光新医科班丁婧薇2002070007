@@ -1,0 +1,30 @@
+x <- atan(1/1:1000)
+x
+x <- 1:1000
+y <- atan(1/x)
+y
+z <- 1/tan(y)
+z
+identical(x,z)
+x == z
+all.equal(x,z)
+true_and_missing <- TRUE
+false_and_missing <- FALSE
+mixed <- NA
+any(true_and_missing = TRUE)
+any(false_and_missing = FALSE)
+any(mixed = NA)
+all(true_and_missing = TRUE)
+all(false_and_missing = FALSE)
+all(mixed = NA)
+class(Inf)
+class(NA)
+class(NaN)
+class("")
+gender_char <- sample(c("dog","cat","hamster","goldfish"),1000,replace = TRUE)
+(gender <- factor(gender_char))
+summary(gender)
+peach <- 1
+tomato <- 2
+potato <- 3
+ls(pattern = "a")
