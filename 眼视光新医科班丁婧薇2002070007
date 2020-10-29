@@ -1,3 +1,4 @@
+练习
 x <- atan(1/1:1000)
 x
 x <- 1:1000
@@ -8,6 +9,7 @@ z
 identical(x,z)
 x == z
 all.equal(x,z)
+all.equal(x,z,0)
 true_and_missing <- TRUE
 false_and_missing <- FALSE
 mixed <- NA
@@ -28,3 +30,133 @@ peach <- 1
 tomato <- 2
 potato <- 3
 ls(pattern = "a")
+课堂上
+1:5 + 6:10
+c(1,3,6,10,15)+c(0,1,3,6,10)
+x <- c(0.5,0.6)
+sum(1:5)
+median(1:5)
+mean(1:9)
+sum(1,2,3,4,5)
+median(1,2,3,4,5)
+mean(1,2,3,4,5)
+mean(2,2,3,4,5)
+c(2,3,5,7,11,13) -2
+-2:2*-2:2
+1:10/3
+abs(-9)
+abs(10)
+sqrt(9)
+log(10)
+log10(10)
+log(100,10)
+log10(100)
+1.23e5
+identical(2^3,2**3)
+pi
+sin(30)
+sin(1)
+sin(pi/6)
+sin(pi/2)
+cos(c(0, pi / 4, pi / 2, pi))
+round(3.1415926,3)
+floor(3.1415926)
+ceiling(3.1415926)
+trunc(3.1415926)
+factorial(9)
+exp(pi * 1i) + 1
+factorial(7) + factorial(1) - 71 ^ 2
+choose(5, 0:5)
+c(3,4-1,1+1+1) == 3
+1:3 != 3:1
+exp(1:5)<100
+(1:5) ^ 2 >= 16
+sqrt(2)^2 == 2
+sqrt(2) ^ 2 - 2
+all.equal(sqrt(2) ^ 2 , 2)
+all.equal(sqrt(2) ^ 2 , 3)
+isTRUE(all.equal(sqrt(2) ^ 2 , 3))
+c( "Can", "you", "can", "a", "can", "as", "a", "canner", "can", "can") =="can"
+c("A","B","C","D")<"C"
+c("a","b","c","d")<"C"
+x <- 5:10
+y = 2:7
+x + 2*y-3
+c(Inf+1,Inf-1,Inf-Inf)
+c(1/Inf,Inf/1,Inf/Inf)
+c(sqrt(Inf),sin(Inf))
+c(log(Inf),log(Inf,Inf))
+c(NA+1,NA*5,NA+Inf)
+c(NA+NA,NaN+NaN,NaN+NA,NA+NaN)
+x3 <- c(0,Inf,-Inf,NaN,NA)
+is.finite(x3)
+is.infinite(x3)
+is.nan(x3)
+is.na(x3)
+x4 <- 1:10 >=5
+!x4
+y4 <- 1:10 %% 2 ==0
+x4|y4
+x4&y4
+class(sqrt(1:10))
+class(3+1i)
+class(1)
+class(1L)
+class(0.5:4.5)
+class(1:5)
+(gender <- factor(c("male","female","male","female")))
+levels(gender)
+nlevels(gender)
+as.integer(gender)
+gender_char <- sample(c("female","male"),10000,replace = TRUE)
+gender_fac <- as.factor(gender_char)
+object.size(gender_char)
+object.size(gender_fac)
+as.character(gender)
+is.character("red lorry,yellow lorry")
+is.logical(FALSE)
+is.list(list(a=1,b=2))
+is(gender,"factor")
+is.factor(gender)
+is.numeric(1)
+is.numeric(1L)
+is.integer(1)
+is.integer(1L)
+is.double(1)
+is.double(1L)
+x <- "123.456"
+as(x,"numeric")
+as.numeric(x)
+y <- c(2,12,343,34997)
+as(y,"data.frame")
+as.data.frame(y)
+x <-"123.456"
+class(x) <- "numeric"
+is.numeric(x)
+y <- c(1,2,3,4,5,6,7)
+for(i in y)i
+for(i in y)print(i)
+num <- runif(30)
+summary(num)
+letters
+letters[1:5]
+LETTERS
+fac <- factor(sample(letters[1:5],30,replace = TRUE))
+summary(fac)
+bool <- sample(c(TRUE,FALSE,NA),30,replace = TRUE)
+summary(bool)
+attributes(fac)
+View(bool)
+new_bool <- edit(bool)
+peach <- 1
+plum <- "fruity"
+pear <- TRUE
+is(bool)
+ls.str()
+ls()
+browseEnv()
+ls()
+rm(bool)
+ls()
+rm(list=ls())
+ls()
