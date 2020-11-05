@@ -10,8 +10,9 @@ assign(
 )
 ls(envir=multiples_of_pi) 
 multiples_of_pi[["two_pi"]]
-
-
+multiples_of_pi[["three_pi"]]
+multiples_of_pi[["four_pi"]]
+www <- function(x)
 (a_list <- list(
   c(1,1,2,5,14,42),  
   month.abb,  
