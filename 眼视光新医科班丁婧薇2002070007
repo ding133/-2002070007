@@ -12,7 +12,29 @@ ls(envir=multiples_of_pi)
 multiples_of_pi[["two_pi"]]
 multiples_of_pi[["three_pi"]]
 multiples_of_pi[["four_pi"]]
-www <- function(x)
+www<- function(x){
+  n<-1:Inf
+  y<-n
+  identical(x,y)
+}
+www(0)
+www(-9)  
+www(9)
+www(1000)
+data.frame(risi)
+colSums(data.frame[,1])
+colSums(data.frame[,2])
+colSums(data.frame[,3])
+colSums(data.frame[,4])
+a_data_frame(
+  beaver1
+  id<- 1
+)
+b_data_frame(
+  beaver2
+  id<- 2
+)
+rbind(a_data_frame,b_data_frame)
 (a_list <- list(
   c(1,1,2,5,14,42),  
   month.abb,  
